@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <h2>Admin Menu ({{ role }})</h2>
+  <a href="/deposit/">Deposit</a>
+  <a href="/withdraw/">Withdraw</a>
+  <a href="/balance/">Balance</a>
+  <a href="/statement/">Statement</a>
+
+  {% if role == "Manager" %}
+  <a href="/create/">Create Account</a>
+  {% endif %}
+
+  <a href="/logout/">Logout</a>
+
+</body>
+</html>
